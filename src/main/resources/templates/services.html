@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Услуги</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+<header>
+    <a href="/index" class="logo_link">СмартМедикал</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index">Главная</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/index" role="button" aria-expanded="false">Меню</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/services">Услуги</a></li>
+                <li><a class="dropdown-item" href="/price">Прайс-лист</a></li>
+                <li><a class="dropdown-item" href="/appointment">Запись на прием</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contacts">Контакты</a>
+        </li>
+    </ul>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12>">
+                <h1 class="text-center text-uppercase mb-5">Предоставляемые услуги</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                COVID-19
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                В клинике "СмартМедикал" можно сдать анализы на выявление заболевания новой коронавирусной инфекции COVID-19, а также пройти тест на выработанные антитела к коронавирусу.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Онкология
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Сегодня диагностика и лечение рака – одна из главных задач медицины. С онкологическими заболеваниями в своей работе сталкиваются врачи практически всех специальностей.</p>
+                                <p>Любой врач на своем приеме уделяет особое внимание профилактике, скринингу и ранней диагностике злокачественных заболеваний.</p>
+                                <p>Онкологи занимаются исследованием причин появления, профилактикой, диагностикой и лечением новообразований.</p>
+                                <ul>Когда стоит обратиться к врачу онкологу?
+                                    <li>Вы прошли курс лечения по поводу любого онкологического заболевания – в качестве профилактического наблюдения не реже раза в полгода или чаще – по рекомендации врача.</li>
+                                    <li>Не реже раза в полгода года необходимо обращаться к онкологу женщинам после 40-45 лет (нерожавшим рекомендуется снизить этот возраст еще на 5 лет), мужчинам – после 45-50 лет.</li>
+                                    <li>У вас диагностированы следующие заболевания: полипоз кишечника, мастопатия, цирроз печени.</li>
+                                    <li>В семье есть кровные родственники, страдающие онкозаболеваниями.</li>
+                                    <li>Вы работаете на химическом производстве, или в любых других экологически неблагополучных условиях (пылевые и газовые загрязнения).</li>
+                                    <li>Вы увлекаетесь загаром – как естественным, так и в условиях солярия.</li>
+                                    <li>Вы курите – рекомендуется обращаться к онкологу для осмотра не реже одного- двух раз в год, так как взаимосвязь частоты онкозаболеваний и курения неоднократно доказана статистикой.</li></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Кардиология
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Кардиолог – это врач, который диагностирует, лечит и предупреждает воспалительные, метаболические и дегенеративно-дисторофические патологии сердца, сосудов.</p>
+                                <ul>В своей практике врач сталкивается со следующими заболеваниями:
+                                    <li>порок сердца(приобретенный в течении жизни или имевшийся с рождения);</li>
+                                    <li>ишемическое поражение сердца;</li>
+                                    <li>сердечная недостаточность, вызванная различными причинами;</li>
+                                    <li>стенокардия, которая развивается на фоне недостаточности кровоснабжения сердца;</li>
+                                    <li>поражение сосудов и мышц сердца, возникшее на фоне воспаления то или иного его участка( кардиты);</li>
+                                    <li>аритмии, среди которых: брадикардия, тахикардия, частичная блокада сердца;</li>
+                                    <li>аневризмы аорты и других артерий;</li>
+                                    <li>инфаркты и состояния им предшествующие.</li>
+                                </ul>
+                                <p>Это далеко не полный список патологий, которые находятся в компетенции кардиолога. Любая болезнь сердца или сосудов требует обязательной консультации у специалиста и грамотного лечения. Поэтому не стоит откладывать посещение кардиолога при наличии даже малейших сомнений относительно здоровья сердца и сосудов.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Флебология
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>У нас можно сделать УЗДС вен и артерий, получить консультацию по профилактике, пройти курс лечения амбулаторно или в дневном стационаре.</p>
+                                <p>В клинике «СмартМедикал» работают опытные флебологи и сосудистые хирурги, которые прошли стажировку в европейских клиниках и применяют в своей практике самые эффективные методы лечения сосудистых болезней ног.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Эндокринология
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Эндокринология занимается патологиями органов внутренней секреции (щитовидной железы, гипофиза, гипоталамуса, надпочечников, поджелудочной железы, половых желез).</p>
+                                <p>Как правило, они не проявляют свои дисфункции болью или другим дискомфортом, поэтому пациент достаточно часто узнает о своем недуге в ходе планового осмотра или по причине каких-либо косвенных недомоганий. Например, у вас может быть слабость и стойкая бессонница, а причина – в недостаточной функции щитовидной железы.</p>
+                                <p>Врач-эндокринолог разбирается с подобными состояниями, по определенным признакам и симптомам выясняя, работа какого органа внутренней секреции нарушена. Все органы внутренней секреции взаимосвязаны между собой и сбой в работе одного из них может привести к расстройству функции или патологическому синдрому другого, поэтому очень важно обратиться за помощью к профессионалу, чтобы правильно квалифицировать источник проблемы.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Терапия
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Отделение терапии – это именно то место, куда необходимо обратиться пациенту, если беспокоят боли невыясненной этиологии. Терапевт является специалистом широкого профиля, который обладает достаточными знаниями для определения первопричины заболевания и назначения эффективного решения.</p>
+                                <p>На приеме у врача в отделении терапии вам обязательно необходимо подробно рассказать обо всех беспокоящих вас симптомах и общих нюансах здоровья. Также врач может провести небольшие мануальные или визуальные обследования, а для уточнения диагноза отправит к более узким специалистам, а также назначит лабораторные или инструментальные исследования. Первичная консультация у терапевта поможет вам выяснить причину болезни и начать терапию.</p>
+                                <p>Высокий уровень оснащения (собственные лаборатории и полное аппаратное обеспечение последнего поколения) позволяет нашим специалистам проводить точную диагностику и назначать действенную терапию в каждом индивидуальном случае.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Гастроэнтерология
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Специалисты отделения гастроэнтерологии клиники «СмартМедикал» приглашают жителей Ульяновска записаться на консультацию, медицинское обследование, диагностику и лечение у ведущих гастроэнтерологов города. Техническое оборудование высокого класса позволяет с максимальной точностью проводить процедуру диагностики (используя КТ, МРТ и УЗИ) и сдачу анализов всех типов. Лечение и терапия проходят до полного выздоровления пациентов под наблюдением наших врачей. Забор материала производится в едином центре Ульяновска, что существенно экономит время. Также в нашем отделении гастроэнтерологии работает физиотерапевтический кабинет и дневной стационар с полным набором медицинских услуг.</p>
+                                <p>Опытные врачи-гастроэнтерологи клиники «СмартМедикал» прошли обучение и стажировку в лучших европейских медицинских центрах подготовки специалистов в области гастроэнтерологии. Это позволяет им проводить консультации, лечение и терапию ЖКТ быстро, эффективно и максимально деликатно.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                Неврология
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Неврология – одно из профильных направлений медицинского центра "Смартмедикал". Поэтому для диагностики и лечения неврологических заболеваний нами подобрано высокотехнологичное оборудование, а прием ведут врачи-неврологи высшей категории.</p>
+                                <p>В отделении неврологии возможно вылечить большинство патологий периферической и ЦНС, вследствие которых страдают головной или спинной мозг и связанные с ними нервные окончания. Из-за поражения определенных нервов, у человека ухудшается координация, чувствительность, могут появляться боли или онемение конечностей.</p>
+                                <p>Принято считать, что такого рода болезни характерны для людей пенсионного возраста, но это совсем не так. Постоянный стресс, хронический недосып и малоподвижный образ жизни привели к тому, что проблемы с ЦНС и периферической нервной системой встречаются даже у молодых людей, а после 30 лет многие имеют уже несколько прогрессирующих заболеваний или невралгий. Выявление отклонений на ранних стадиях и в молодом возрасте позволяет предотвратить развитие заболеваний и в большинстве случаев поддается воздействию препаратами и процедурами. В клинике «Смартмедикал» возможно выявление заболеваний на самых ранних стадиях, а для качественной реабилитации имеется специально оборудованный физиокабинет.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                Хирургия
+                            </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Обращение к врачу в отделение хирургии медицинского центра «СмартМедикал» может быть по самым разным причинам – как с экстренными неотложными случаями (острая боль, непроходимость, клещ), так и в плановом порядке (удаление кожных новообразований, консультация по беспокоящим вас вопросам). </p>
+                                <p>Врачи хирургии многопрофильной клиники «СмартМедикал» принимают пациентов с обширным спектром патологий, гарантируя современное и высокоэффективное лечение терапевтического и оперативного плана.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="text_footer">©2015-2022, ООО "СмартМедикал", Ульяновск</div>
+    <div class="contacts_footer">г.Ульяновск, ул.Красноармейская,24, тел.8(8422)42-30-69</div>
+</footer>
+
+<script src="static/js/jquery-3.6.1.min.js"></script>
+<script src="static/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

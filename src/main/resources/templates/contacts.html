@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script>
+	$(function(){
+		//alert(1);
+	});
+	</script>
+</head>
+
+<body class="body_contacts">
+<header>
+    <a href="/index" class="logo_link">СмартМедикал</a>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index">Главная</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/index" role="button" aria-expanded="false">Меню</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/services">Услуги</a></li>
+                <li><a class="dropdown-item" href="/price">Прайс-лист</a></li>
+                <li><a class="dropdown-item" href="/appointment">Запись на прием</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contacts">Контакты</a>
+        </li>
+    </ul>
+</header>
+
+<section class="contacts_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12>">
+                <h1 class="text-center mb-5">Как обратиться в клинику СмартМедикал</h1>
+            </div>
+        </div>
+        <div class="row justify-content-around pb-5 pt-5">
+            <div class="col-xl-3 col-sm-12 contacts_cell">
+                <h2 class="text-center">Наш адрес</h2>
+                <p class="text-center">г.Ульяновск, ул.Красноармейская, 24</p>
+                <p class="text-center">Мы находимся рядом с остановкой "Красногвардейская"</p>
+            </div>
+            <div class="col-xl-3 col-sm-12 contacts_cell">
+                <h2 class="text-center">Наш телефон для записи на прием</h2>
+                <p class="text-center">+7(8422)42-30-69</p>
+                <div class="col text-center">
+                    <a class="btn btn-primary" href="appointment.html" role="button">Запись на сайте</a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-12 contacts_cell">
+                <h2 class="text-center">Наш e-mail</h2>
+                <p class="text-center">smartmed73@yandex.ru</p>
+                <div class="col text-center">
+                    <a class="btn btn-primary" href="#form_question" role="button">Написать нам</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12>">
+                <h1 class="text-center mb-5 pt-5">Контролирующие органы</h1>
+            </div>
+            <div class="row justify-content-around pb-5 pt-5">
+                <div class="col-xl-3 col-sm-12 contacts_cell">
+                    <h5 class="text-center">Управление Роспотребнадзора по Ульяновской области</h5>
+                    <p class="text-center">Телефон: +7(8422)44-29-41</p>
+                </div>
+                <div class="col-xl-3 col-sm-12 contacts_cell">
+                    <h5 class="text-center">Территориальный орган Росздравнадзора по Ульяновской области</h5>
+                    <p class="text-center">Телефон: +7(8422)27-89-56</p>
+                </div>
+                <div class="col-xl-3 col-sm-12 contacts_cell">
+                    <h5 class="text-center">Министерство здравоохранения Ульяновской области</h5>
+                    <p class="text-center">Телефон: +7(8422)42-08-69</p>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-12">
+                <h2 class="text-start mb-5">Форма обратной связи</h2>
+            </div>
+        </div>
+        <div class="row justify-content-start" id="form_question">
+            <div class="col-5">
+                <form>
+                    <div class="messenger"> </div>
+                    <div class="row mb-3">
+                        <label for="inputFio" class="col-sm-2 col-form-label">ФИО<span class="asterisk">*</span></label>
+                        <div class="col-sm-7">
+                            <input name="surname" type="text" class="form-control" id="inputFio">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputPhone" class="col-sm-2 col-form-label">Телефон<span class="asterisk">*</span></label>
+                        <div class="col-sm-7">
+                            <input name="phone" type="text" class="form-control" id="inputPhone">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputEmail" class="col-sm-2 col-form-label">Эл.почта</label>
+                        <div class="col-sm-7">
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="Textarea1" class="col-sm-2 col-form-label">Текст обращения<span class="asterisk">*</span></label>
+                        <div class="col-sm-7">
+                            <textarea name="message" class="form-control" id="Textarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form_alert">Поля, отмеченные знаком "*", обязательны для заполнения</div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="text_footer">©2015-2022, ООО "СмартМедикал", Ульяновск</div>
+    <div class="contacts_footer">г.Ульяновск, ул.Красноармейская,24, тел.8(8422)42-30-69</div>
+</footer>
+
+<script src="static/js/jquery-3.6.1.min.js"></script>
+<script src="static/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
